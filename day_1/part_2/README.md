@@ -1,4 +1,4 @@
---- Part Two ---
+## Problem Text
 
 You notice that the device repeats the same frequency change list over and over. To calibrate the device, you need to find the first frequency it reaches twice.
 
@@ -25,4 +25,8 @@ What is the first frequency your device reaches twice?
 
 Your puzzle answer was 75749.
 
-Both parts of this puzzle are complete! They provide two gold stars: **
+## My Comments
+
+Originally, I stored the past voltages in a list and would check if the list contained a new voltage. After running and seeing that execution took forever, I remembered that a `contains` method on a list would take `O(n)` time, so I swapped my storage data structure to a dictionary (hash table) and improved lookup time to `O(1)`, which improved run time significantly.
+
+Additionally, I originally did not understand that I had to look over the file multiple times.

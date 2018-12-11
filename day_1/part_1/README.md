@@ -1,3 +1,5 @@
+## Problem Text
+
 --- Day 1: Chronal Calibration ---
 
 "We've detected some temporal anomalies," one of Santa's Elves at the Temporal Anomaly Research and Detection Instrument Station tells you. She sounded pretty worried when she called you down here. "At 500-year intervals into the past, someone has been changing Santa's history!"
@@ -28,3 +30,9 @@ Here are other example situations:
 Starting with a frequency of zero, what is the resulting frequency after all of the changes in frequency have been applied?
 
 Your puzzle answer was 525.
+
+The first half of this puzzle is complete! It provides one gold star: *
+
+## My Comments
+
+To make parsing easier, we can simply add every number together instead of having to check the sign and correctly subtract or add. This is because of the "commutative property of addition".
