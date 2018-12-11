@@ -1,8 +1,8 @@
-from datetime import datetime # to time how long execution took
+import time # for timing how long execution takes
 
-startTime = datetime.now()
+start_time = time.time()
 
-input_file_name = "input.txt"
+input_file_name = "../input.txt"
 
 with open(input_file_name) as handle:
     two_char_count = 0
@@ -18,8 +18,6 @@ with open(input_file_name) as handle:
                 d[char] += 1
             else:
                 d[char] = 1
-        
-        print(d)
 
         for key, value in d.items():
             if value == 2 and already_found_two_char == False:
@@ -30,4 +28,5 @@ with open(input_file_name) as handle:
                 already_found_three_char = True
 
 print(f"checksum = {two_char_count * three_char_count}")
-print(f"execution took {datetime.now() - startTime}")
+
+print("--- exeuction took %s seconds ---" % (time.time() - start_time))
